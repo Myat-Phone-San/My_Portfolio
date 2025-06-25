@@ -4,12 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Myat Phone San - Frontend Developer</title>
+    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Google Fonts - Inter -->
+     <!-- Font Awesome CDN (v5) -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+       <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
     <style>
-        :root {
+         :root {
             --color-stable-violet: #764ba2;
             --color-stable-violet-dark: #6A1FB8;
             --color-stable-violet-light: #C084FC;
@@ -58,8 +62,8 @@
     </style>
 </head>
 <body class="overflow-x-hidden">
-    <!-- Navigation -->
-    <nav class="fixed top-0 left-0 w-full bg-[#1a1a1a] bg-opacity-90 z-50 py-4 shadow-lg rounded-b-xl">
+    <!-- Navbar -->
+     <nav class="fixed top-0 left-0 w-full bg-[#1a1a1a] bg-opacity-90 z-50 py-4 shadow-lg rounded-b-xl">
         <div class="container mx-auto px-4 flex items-center justify-between">
             <!-- Logo -->
             <a href="#about" class="text-2xl font-bold text-white tracking-wider rounded-lg px-2 py-1 transition-colors duration-300 hover:bg-gray-800">
@@ -92,23 +96,21 @@
                 <i class="fas fa-user-circle text-xl cursor-pointer bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 hover:from-purple-600 hover:via-pink-600 hover:to-red-600 text-white font-bold py-3 px-6 rounded-full shadow-lg transition-all duration-300 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-stable-violet focus:ring-opacity-75"></i>
             </div>
         </div>
-        <!-- Mobile Menu -->
-        <div id="mobileMenu" class="md:hidden mt-4 hidden flex-col space-y-2 w-full text-center">
-            <a href="#about" class="block text-gray-300 hover:text-white px-4 py-2 rounded-lg hover:bg-gray-700">
-                <i class="fas fa-home mr-2"></i> About
-            </a>
-            <a href="#projects" class="block text-gray-300 hover:text-white px-4 py-2 rounded-lg hover:bg-gray-700">Projects</a>
-            <a href="#contact" class="block text-gray-300 hover:text-white px-4 py-2 rounded-lg hover:bg-gray-700">Contact me</a>
-            <a href="#contact" class="mt-4">
-                <button class="block bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 hover:from-purple-600 hover:via-pink-600 hover:to-red-600 text-white font-semibold py-2 px-4 rounded-full shadow-lg transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-pink-400 mx-auto">
-                    Hire Me
-                </button>
-                <i class="fas fa-user-circle text-xl cursor-pointer bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 hover:from-purple-600 hover:via-pink-600 hover:to-red-600 text-white font-bold my-3 py-3 px-6 rounded-full shadow-lg transition-all duration-300 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-stable-violet focus:ring-opacity-75"></i>
-            </a>
-        </div>
-    </nav>
+  <div id="mobileMenu" class="md:hidden mt-4 hidden flex-col space-y-2">
+    <a href="#about" class="block text-gray-300 hover:text-white px-4 py-2 rounded-lg hover:bg-gray-700">About</a>
+    <a href="#projects" class="block text-gray-300 hover:text-white px-4 py-2 rounded-lg hover:bg-gray-700">Projects</a>
+    <a href="#contact" class="block text-gray-300 hover:text-white px-4 py-2 rounded-lg hover:bg-gray-700">Contact me</a>
+    <button class=" block bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 hover:from-purple-600 hover:via-pink-600 hover:to-red-600 text-white font-semibold py-2 px-4 rounded-full shadow-lg transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-pink-400">
+        Hire Me
+    </button>
 
-    <!-- Header -->
+    <button class="block bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 hover:from-purple-600 hover:via-pink-600 hover:to-red-600 text-white font-semibold py-2 px-4 rounded-full shadow-lg transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-pink-400">
+        <i class="fas fa-user text-light text-xl"></i>
+    </button>
+    </div>
+</nav>
+
+     <!-- Header -->
     <header id="about" class="relative min-h-screen flex items-center justify-center pt-24 pb-12 px-4 md:px-8 grid-pattern-bg">
         <div class="absolute inset-0 z-0">
             <div class="absolute top-1/4 left-1/4 w-3 h-3 bg-stable-violet rounded-full animate-pulse"></div>
@@ -398,7 +400,7 @@
                 // Close mobile menu when a link is clicked
                 mobileMenu.querySelectorAll('a').forEach(link => {
                     link.addEventListener('click', () => {
-                        mobileMenu.classList.add('hidden');
+                        //mobileMenu.classList.add('hidden');
                     });
                 });
             }
