@@ -72,7 +72,7 @@
 </head>
 <body class="overflow-x-hidden">
     <nav class="fixed top-0 left-0 w-full bg-[#1a1a1a] bg-opacity-90 z-50 py-4 shadow-lg rounded-b-xl">
-        <div class="container mx-auto px-4 flex items-center justify-between">
+        <div class="container mx-auto px-4 flex items-center justify-between flex-wrap">
             <a href="#about" class="text-2xl font-bold text-white tracking-wider rounded-lg px-2 py-1 transition-colors duration-300 hover:bg-gray-800">
                 <span class="text-stable-violet-light">Myat</span>
             </a>
@@ -83,21 +83,21 @@
                 </svg>
             </button>
 
-            <div class="hidden md:flex flex-grow items-center justify-center"> <div class="flex items-center space-x-6 border-stable-violet border-2 bg-gray-800 text-gray-300 rounded-full shadow-lg transition-all duration-300 ease-in-out transform focus:outline-none focus:ring-2 focus:ring-stable-violet focus:ring-opacity-75">
-                    <a href="#about" class="text-gray-300 hover:text-white px-3 py-2 rounded-lg hover:bg-gray-700">
-                        <i class="fas fa-home mr-2"></i>
+            <div class="hidden md:flex flex-grow items-center justify-center">
+                <div class="flex items-center space-x-4 border-stable-violet border-2 bg-gray-800 text-gray-300 rounded-full shadow-lg transition-all duration-300 ease-in-out transform focus:outline-none focus:ring-2 focus:ring-stable-violet focus:ring-opacity-75 p-1">
+                    <a href="#about" class="text-gray-300 hover:text-white px-3 py-2 rounded-full hover:bg-gray-700">
+                        <i class="fas fa-home mr-2"></i> About
                     </a>
-                    <a href="#about" class="text-gray-300 hover:text-white px-3 py-2 rounded-lg hover:bg-gray-700">About</a>
-                    <a href="#projects" class="text-gray-300 hover:text-white px-3 py-2 rounded-lg hover:bg-gray-700">Projects</a>
-                    <a href="#contact" class="text-gray-300 hover:text-white px-3 py-2 rounded-lg hover:bg-gray-700">Contact me</a>
+                    <a href="#projects" class="text-gray-300 hover:text-white px-3 py-2 rounded-full hover:bg-gray-700">Projects</a>
+                    <a href="#contact" class="text-gray-300 hover:text-white px-3 py-2 rounded-full hover:bg-gray-700">Contact me</a>
                 </div>
             </div>
             
             <div class="hidden md:block">
-                <a href="#contact" class="inline-flex items-center bg-stable-violet hover:bg-stable-violet-dark text-white font-bold py-3 px-6 rounded-full shadow-lg transition-all duration-300 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-stable-violet focus:ring-opacity-75">
+                <a href="#contact" class="inline-flex items-center bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 hover:from-purple-600 hover:via-pink-600 hover:to-red-600 text-white font-bold py-3 px-6 rounded-full shadow-lg transition-all duration-300 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-stable-violet focus:ring-opacity-75">
                     Hire Me
                 </a>
-                  <i class="fas fa-user-circle text-xl cursor-pointer bg-stable-violet hover:bg-stable-violet-dark text-white font-bold py-3 px-6 rounded-full shadow-lg transition-all duration-300 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-stable-violet focus:ring-opacity-75"></i>
+                <i class="fas fa-user-circle text-xl cursor-pointer bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 hover:from-purple-600 hover:via-pink-600 hover:to-red-600 text-white font-bold py-3 px-6 rounded-full shadow-lg transition-all duration-300 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-stable-violet focus:ring-opacity-75"></i>
             </div>
         </div>
 
@@ -107,10 +107,12 @@
             </a>
             <a href="#projects" class="block text-gray-300 hover:text-white px-4 py-2 rounded-lg hover:bg-gray-700">Projects</a>
             <a href="#contact" class="block text-gray-300 hover:text-white px-4 py-2 rounded-lg hover:bg-gray-700">Contact me</a>
-            <a href="#contact" class="inline-flex items-center bg-stable-violet hover:bg-stable-violet-dark text-white font-bold py-3 px-6 rounded-full shadow-lg transition-all duration-300 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-stable-violet focus:ring-opacity-75 mx-auto">
-                Hire Me
+
+            <a href="#contact" class="mt-4">
+                <button class="block bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 hover:from-purple-600 hover:via-pink-600 hover:to-red-600 text-white font-semibold py-2 px-4 rounded-full shadow-lg transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-pink-400 mx-auto">
+                    Hire Me
+                </button>
             </a>
-              <i class="fas fa-user-circle text-xl cursor-pointer bg-stable-violet hover:bg-stable-violet-dark text-white font-bold py-3 px-6 rounded-full shadow-lg transition-all duration-300 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-stable-violet focus:ring-opacity-75"></i>
         </div>
     </nav>
 
@@ -134,7 +136,7 @@
                 <span class="bg-gray-800 text-gray-300 px-4 py-2 rounded-full text-sm shadow-inner border border-gray-700">Front-end</span>
                 <span class="bg-gray-800 text-gray-300 px-4 py-2 rounded-full text-sm shadow-inner border border-gray-700">Responsive Design</span>
             </div>
-            <a href="#contact" class="inline-block bg-stable-violet hover:bg-stable-violet-dark text-white font-bold py-3 px-8 rounded-full shadow-lg transition-all duration-300 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-stable-violet focus:ring-opacity-75" data-aos="fade-up" data-aos-delay="600">
+            <a href="#contact" class="inline-block bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 hover:from-purple-600 hover:via-pink-600 hover:to-red-600 text-white font-semibold py-2 px-4 rounded-full shadow-lg transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-pink-400 text-white font-bold py-3 px-8 rounded-full shadow-lg transition-all duration-300 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-stable-violet focus:ring-opacity-75" data-aos="fade-up" data-aos-delay="600">
                 Hire Me
             </a>
         </div>
@@ -201,7 +203,7 @@
                     <div class="relative z-10 text-white project-card-content">
                         <span class="absolute top-4 left-4 text-white text-2xl font-bold opacity-50">02</span>
                         <h3 class="text-2xl text-center font-bold mb-2">Online Wallet System (Unipay)</h3>
-                        <p class="text-gray-200">Features: user authentication, wallet management, transaction, QR  payment with SHA-256 security. Technologies: Laravel PHP, MySQL, HTML, CSS, JavaScript, Bootstrap, jQuery.</p>
+                        <p class="text-gray-200">Features: user authentication, wallet management, transaction, QR payment with SHA-256 security. Technologies: Laravel PHP, MySQL, HTML, CSS, JavaScript, Bootstrap, jQuery.</p>
                     </div>
                 </div>
                 <div class="relative overflow-hidden rounded-2xl shadow-xl project-gradient-bg p-8 h-80 flex items-end" data-aos="zoom-in-up" data-aos-delay="400">
@@ -293,12 +295,12 @@
     </section>
 
     <section id="contact" class="py-20 px-4 md:px-8 bg-[#1a1a1a] border-t border-gray-800 grid-pattern-bg">
-        <div class="container mx-auto text-center max-w-3xl mx-auto p-8 bg-gray-900 bg-opacity-80 rounded-2xl shadow-xl border border-gray-700" data-aos="fade-up">
+        <div class="container mx-auto text-center max-w-3xl p-8 bg-gray-900 bg-opacity-80 rounded-2xl shadow-xl border border-gray-700" data-aos="fade-up">
             <h2 class="text-4xl font-bold text-white mb-6">Have an idea about a project?</h2>
             <p class="text-lg text-gray-300 mb-8">
                 Let's connect and discuss how I can help bring your vision to life with clean, efficient frontend solutions.
             </p>
-            <a href="mailto:myatphonesan131619@gmail.com" class="inline-block bg-stable-violet hover:bg-stable-violet-dark text-white font-bold py-3 px-8 rounded-full shadow-lg transition-all duration-300 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-stable-violet focus:ring-opacity-75">
+            <a href="mailto:myatphonesan131619@gmail.com" class="inline-block bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 hover:from-purple-600 hover:via-pink-600 hover:to-red-600 text-white font-semibold py-2 px-4 rounded-full shadow-lg transition transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-pink-400 text-white font-bold py-3 px-8 rounded-full shadow-lg transition-all duration-300 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-stable-violet focus:ring-opacity-75">
                 Send us a message
             </a>
         </div>
@@ -306,12 +308,12 @@
 
     <footer class="bg-[#1a1a1a] py-8 text-center text-gray-400 text-sm">
         <div class="container mx-auto px-4">
-            <div class="flex flex-wrap justify-center items-center gap-6 mb-6" data-aos="fade-up">
-                <div class="container mx-auto px-4 flex items-center justify-between">
+            <div class="flex flex-col md:flex-row justify-center items-center gap-6 mb-6" data-aos="fade-up">
+                <div class="container mx-auto px-4 flex items-center justify-between flex-wrap">
             <a href="#about" class="text-2xl font-bold text-white tracking-wider rounded-lg px-2 py-1 transition-colors duration-300 hover:bg-gray-800">
                 <span class="text-stable-violet-light">Myat</span>
             </a>
-                <div class="flex items-center space-x-6 border-stable-violet border-2 bg-gray-800 text-gray-300 rounded-full shadow-lg transition-all duration-300 ease-in-out transform focus:outline-none focus:ring-2 focus:ring-stable-violet focus:ring-opacity-75">
+                <div class="flex flex-wrap justify-center items-center gap-4 border-stable-violet border-2 bg-gray-800 text-gray-300 rounded-full shadow-lg transition-all duration-300 ease-in-out transform focus:outline-none focus:ring-2 focus:ring-stable-violet focus:ring-opacity-75 p-1">
                     <a href="https://github.com/Myat-Phone-San" target="_blank" rel="noopener noreferrer"
                        class="w-12 h-12 bg-gray-800 text-gray-300 rounded-full flex items-center justify-center
                               hover:bg-stable-violet hover:text-white transition-all duration-300 text-2xl
@@ -343,12 +345,14 @@
                         <i class="far fa-envelope"></i>
                     </a>
                 </div>
-                <div class="hidden md:block">
-                <a href="#contact" class="inline-flex items-center bg-stable-violet hover:bg-stable-violet-dark text-white font-bold py-3 px-6 rounded-full shadow-lg transition-all duration-300 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-stable-violet focus:ring-opacity-75">
+               <div class="hidden md:block">
+                <a href="#contact" class="inline-flex text-base items-center bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 hover:from-purple-600 hover:via-pink-600 hover:to-red-600 text-white font-bold py-3 px-6 rounded-full shadow-lg transition-all duration-300 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-stable-violet focus:ring-opacity-75">
                     Hire Me
                 </a>
-                  <i class="fas fa-user-circle text-xl cursor-pointer bg-stable-violet hover:bg-stable-violet-dark text-white font-bold py-3 px-6 rounded-full shadow-lg transition-all duration-300 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-stable-violet focus:ring-opacity-75"></i>
+                <i class="fas fa-user-circle text-xl cursor-pointer bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 hover:from-purple-600 hover:via-pink-600 hover:to-red-600 text-white font-bold py-3 px-6 rounded-full shadow-lg transition-all duration-300 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-stable-violet focus:ring-opacity-75"></i>
             </div>
+        </div>
+
         </div>
             </div>
             <p>Email: myatphonesan131619@gmail.com | Phone: 09-762228526</p>
