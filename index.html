@@ -11,7 +11,7 @@
      <!-- Font Awesome CDN (v5) -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-       <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    
     <style>
          :root {
             --color-stable-violet: #764ba2;
@@ -400,7 +400,7 @@
                 // Close mobile menu when a link is clicked
                 mobileMenu.querySelectorAll('a').forEach(link => {
                     link.addEventListener('click', () => {
-                        //mobileMenu.classList.add('hidden');
+                        mobileMenu.classList.add('hidden');
                     });
                 });
             }
